@@ -1,0 +1,26 @@
+[project]
+name = "lab6"
+version = "0.1.0"
+description = "Лабораторная работа 6: введение в FastAPI"
+readme = "README.md"
+authors = [
+    { name = "kealfol", email = "sasha.conp@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.165.0",
+    "pydantic>=2.14.4",
+    "pydantic-settings>=2.16.3",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx2>=2.16.2",
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
